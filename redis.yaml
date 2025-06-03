@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Disable current module
-    ansible.builtin.command: dnf module disable reids -y
+    ansible.builtin.command: dnf module disable redis -y
   - name: enabled current module
     ansible.builtin.command: dnf module enable redis:20 -y
 
